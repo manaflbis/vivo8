@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #f5f7fa;
+}
+
+:root {
+  --primaryTextColor:#242933;
+  --themeColor:#415fff;
+  --staticColor:#ffffff;
+}
+
+nav {
+  height: 86px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  transition: background-color 0.5s ease;
+}
+nav .mobile-togglebar {
+  display: none;
+  height: 100%;
+}
+nav .mobile-togglebar .hamberger {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 24px;
+  color: var(--staticColor);
+}
+nav .logo svg {
+  width: 104px;
+  height: 100%;
+  transition: fill 0.3s ease;
+  fill: var(--staticColor);
+}
+nav .logo svg:hover {
+  fill: var(--themeColor);
+}
+nav .nav-list ul {
+  height: 100%;
+  display: flex;
+}
+nav .nav-list ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+nav .nav-list ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--staticColor);
+  transition: color 0.2s ease;
+}
+nav .nav-list ul li:hover a {
+  color: var(--themeColor);
+}
+nav .search-login ul {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+nav .search-login ul svg {
+  stroke: var(--staticColor);
+  width: 28px;
+  margin-left: 35px;
+  transition: stroke 0.3s ease;
+}
+nav .search-login ul li:hover svg {
+  stroke: var(--themeColor);
+}
+
+.hero {
+  position: relative;
+}
+.hero .hero-image {
+  width: 100%;
+}
+.hero .hero-info {
+  position: absolute;
+  left: 75px;
+  top: 30%;
+  width: 70%;
+  color: #fff;
+}
+.hero .hero-info h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.hero .hero-info h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.hero .hero-info h4 {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.product-section {
+  width: 100%;
+  padding: 80px;
+}
+.product-section .product {
+  margin: auto;
+  position: relative;
+}
+.product-section .product img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.7s ease;
+}
+.product-section .product img:hover {
+  transform: scale(1.01);
+}
+.product-section .product-info {
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  transform: translateY(-50%);
+  left: 100px;
+}
+.product-section .product-info h2 {
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.product-section .product-info h3 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.product-section .product-info h4 {
+  font-size: 25px;
+  font-weight: 400;
+}
+.product-section .product-info.x100 {
+  color: #fff;
+  left: 60%;
+  width: 37%;
+}
+
+.section .wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.section .wrapper .product {
+  width: 30%;
+}
+.section .wrapper .y200, .section .wrapper .v29pro {
+  border-radius: 30px;
+  width: 100%;
+  margin: 15px 0px;
+}
+.section .wrapper .t2pro, .section .wrapper .tws {
+  border-radius: 30px;
+  width: 100%;
+}
+.section .wrapper .v29e {
+  border-radius: 30px;
+  width: 100%;
+}
+.section .wrapper .v29e, .section .wrapper .t2pro, .section .wrapper .tws, .section .wrapper .y200, .section .wrapper .v29pro {
+  transition: transform 0.7s ease;
+}
+.section .wrapper .v29e:hover, .section .wrapper .t2pro:hover, .section .wrapper .tws:hover, .section .wrapper .y200:hover, .section .wrapper .v29pro:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background-color: #242933;
+  padding: 80px 50px 0px 50px;
+}
+footer .footer-links .list {
+  display: flex;
+  color: #fff;
+}
+footer .footer-links .list h4 {
+  font-size: 20px;
+}
+footer .footer-links .list .head {
+  width: 200px;
+}
+footer .footer-links .list .head ul {
+  color: #8a8f99;
+}
+footer .footer-links .list .head ul li {
+  transition: color 0.3s ease;
+  line-height: 40px;
+}
+footer .footer-links .list .head ul li:hover {
+  color: var(--themeColor);
+}
+footer .footer-mobno h5 {
+  margin-top: 10px;
+}
+footer .icons {
+  display: flex;
+}
+footer .icons li {
+  margin-right: 10px;
+}
+footer .terms {
+  color: #8a8f99;
+  font-weight: 400;
+  font-size: 13px;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */

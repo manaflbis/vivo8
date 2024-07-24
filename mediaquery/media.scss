@@ -1,0 +1,300 @@
+/*=================== navbar sevtion====================== */
+
+
+@media (min-width: 768px ) and (max-width: 1350px){
+    #navbar{
+        .nav-list{
+            ul li:nth-child(9){
+               display: none;
+            }
+        }
+    }
+
+}
+
+
+
+@media  (max-width: 1200px) {
+
+    #navbar{
+        height: 60px;
+
+        .mobile-togglebar{
+            display: block;
+        }
+        .logo{
+            svg{
+                width: 72px;
+            }
+        }
+        .nav-list{
+            display: none;
+        }
+        .search-login{
+            .nav-icons{
+                width: 24px;
+                margin-left: 15px;
+            }
+        }
+
+    }
+
+    // nav show
+   
+        #nali.show{
+            display: block;
+            
+            ul{
+             position: absolute;
+             top: 50px;
+             left: 0;
+             flex-direction: column;
+             li{
+                padding: 20px 50px;
+                background-color: #fff;
+                
+             }
+            }
+     
+         }
+
+
+   
+
+}
+
+
+
+/*=================== navbar sevtion End====================== */
+
+
+// ==================heroscetion=================
+
+@media(min-width:768px){
+    .hero{
+        .hero-image.phone{
+          display: none;
+        }
+        .hero-image.pc{
+          display: block;
+        }
+  
+      }
+
+}
+
+@media (min-width:768px) and (max-width:992px) {
+
+    .hero{
+        .hero-info{
+            h2{
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+            h4{
+                font-size: 20px;
+            }
+        }
+    }
+  
+ 
+}
+
+@media(max-width:767px){
+
+    .hero{
+      .hero-image.phone{
+        display: block;
+      }
+      .hero-image.pc{
+        display: none;
+      }
+      .hero-info{
+        width: 70%;
+        top: 150px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        h2{
+            font-size: 7vw;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 5.5vw;
+            margin-bottom: 30px;
+        }
+        h4{
+            font-size: 5.2vw;
+        }
+      }
+
+
+
+    }
+
+}
+// ==================heroscetion=================
+
+
+// ==================product secrion=================
+
+@media(min-width:767px) and (max-width:1200px){
+    .product-section{    
+        .product-info{
+            left: 40px;
+            h2{
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+            h3{
+                font-size: 25px;
+                margin-bottom: 30px;
+            }
+            h4{
+                font-size: 20px;
+            }
+        }
+       
+    }
+
+}
+
+
+@media(min-width:767px){
+      
+    .product-section{
+      .product{
+          .phone{
+              display: none;
+          }
+  
+      }
+    }    
+  }
+
+
+@media(max-width:767px){
+      
+  .product-section{
+    padding: 20px;
+    .product{
+        .pc{
+            display: none;
+        }
+        .product-info{
+        left: 50px;
+        top: 150px;
+       
+            h2{
+                font-size: 7vw;
+                margin-bottom: 15px;
+            }
+            h3{
+                font-size: 5.5vw;
+                margin-bottom: 30px;
+            }
+            h4{
+                font-size: 4vw;
+            }
+        }
+        .product-info.x100{
+            top: 120px;
+            width: 80%;
+        }
+
+
+    }
+  }    
+}
+// ==================product secrion ends=================
+
+// =================discover sec starts====================
+
+@media (min-width:767px){
+    section .wrapper .product {
+     
+     .mob{
+        display: none;
+     }    
+    }
+   
+}
+
+@media (max-width:767px){
+    .section{
+        padding: 10px 20px ;
+        .wrapper{
+           display: block;
+            width: 100%;
+            .product{
+                width: 100%;
+                .y200,.t2pro,.v29e,.tws,.v29pro{
+                    width: 100%;
+                }
+               .pc{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+// =================discover sec ends====================
+// =================footer======================
+
+@media (min-width:1200px){
+    footer{
+        .footer-links{
+            .list{
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px){
+    footer{
+        display: block;
+    .footer-links{
+        
+        .list{
+            display: block;
+           
+            
+            .head{
+                width: 100%;
+                padding: 10px ;
+                border-bottom: 1px solid #8a8f99;
+                position: relative;
+                h4{
+                    font-size: 14px;
+                }
+                ul{
+                    display: none;
+                }
+                ul.show{
+                    display: block;
+                }
+            }
+            span{
+                position: absolute;
+                right: 0;
+                top: 15px;
+            }
+        }
+       
+    }  
+    }
+
+    .footer-mobno{
+        padding: 20px;
+        border-bottom: solid 1px #8a8f99;
+        
+    }
+
+}
